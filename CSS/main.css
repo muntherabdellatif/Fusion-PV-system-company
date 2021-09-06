@@ -1,0 +1,177 @@
+/* start global  */
+:root {
+    --color1:#241822 ;
+    --color2:#69409E ;
+    --color2:#36C2F3 ;
+    --color4:#7DB933;
+    --color5:#2c8070 ;
+    --color6:#7db93388 ;
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--color4);
+    border-color: var(--color4);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--color6);
+    border-color: var(--color6);
+}
+.btn-outline-primary {
+    color: var(--color4);
+    border-color: var(--color4);
+}
+.btn-outline-primary:hover {
+    color:white;
+    background-color: var(--color4);
+    border-color: var(--color4);
+}
+/* end global */
+/* start componant */
+.main-heading {
+    position: relative;
+    text-align: center;
+}
+.main-heading  h2 {
+    color: var(--color2);
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.main-heading  p {
+    width: 500px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: var(--p-color);
+}
+.main-heading  p::before {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    bottom: -30px;
+    background-color: black;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.main-heading  p::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    background-color: white;
+    border: 1px solid black;
+    bottom: -39px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* end componant */
+/* start navbar  */
+.navbar {
+    position: relative;
+    background-color: transparent;
+    padding: 35px 0px;
+}
+.navbar-collapse {
+    flex-grow: initial;
+}
+.navbar .nav-item {
+   padding-right: 50px;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover  {
+    color: white;
+}
+.navbar .dropdown-menu {
+    background-color: var(--color4);
+    /* color: white; */
+}
+.navbar .dropdown-menu a {
+    color: white;
+}
+/* end navbar  */
+/* start landing  */
+.landing {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment:fixed ;
+}
+.landing video {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66); 
+}
+.landing .contant {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.landing .contant .name {
+    font-size: 30px;
+}
+.landing .contant h1 {
+    font-size: 40px;
+    color: var(--color4);
+}
+.landing .contant .description {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-bottom: 50px;
+}
+.landing .contant button {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+/* end landing  */
+/* starting domain  */
+.domain {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.domain .domain-contant .dom {
+    padding: 40px;
+}
+.domain .domain-contant .dom i {
+    font-size: 150px;
+    width: 20%;
+    color: var(--color2);
+}
+.domain .domain-contant .dom .text p {
+   width: 400px;
+}
+/* end domain  */
