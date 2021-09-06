@@ -157,6 +157,36 @@
     text-transform: uppercase;
     padding: 10px;
 }
+@media (max-width:992px){ 
+    .landing .contant .name {
+        font-size: 20px;
+    }
+    .landing .contant h1 {
+        font-size: 30px;
+    }
+    .landing .contant .description {
+        font-size: 16px;
+    }
+    .landing .contant button {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .landing .navbar-collapse {
+        position: relative;
+        z-index: 1;
+        background-color:var(--color1);
+    }
+}
+@media (max-width:768px) {
+    .landing .contant h1 {
+        font-size: 24px;
+        margin-bottom: 39px;
+        margin-top: 25px;
+    } 
+    .landing {
+        background-image: url(../img/bg2.jpg);
+    }
+}
 /* end landing  */
 /* starting domain  */
 .domain {
@@ -167,11 +197,22 @@
     padding: 40px;
 }
 .domain .domain-contant .dom i {
+    text-align: center;
     font-size: 150px;
-    width: 20%;
     color: var(--color2);
 }
+@media (max-width:992px){
+    .domain .domain-contant .dom i {
+        font-size: 100px;
+    }
+}
+@media (max-width:768px) {
+    .domain .domain-contant .dom i {
+        font-size: 80px;
+    } 
+}
 .domain .domain-contant .dom .text p {
-   width: 400px;
+   text-align: start;
+   max-width: 400px;
 }
 /* end domain  */
