@@ -113,12 +113,12 @@
     background-size: cover;
     background-attachment:fixed ;
 }
-.landing video {
+/* .landing video {
     position: relative;
     height: 100vh;
     width: 100%;
     z-index: -1;
-}
+} */
 .landing::before {
     content: "";
     position: absolute;
@@ -178,14 +178,23 @@
     }
 }
 @media (max-width:768px) {
+    .landing .contant {
+        width: 100%;
+    }
     .landing .contant h1 {
         font-size: 24px;
-        margin-bottom: 39px;
-        margin-top: 25px;
     } 
     .landing {
         background-image: url(../img/bg2.jpg);
     }
+}
+@media (max-width:576px) {
+    .landing .contant {
+        width: 100%;
+    }
+    .landing .contant h1 {
+        font-size: 24px;
+    } 
 }
 /* end landing  */
 /* starting domain  */
@@ -214,5 +223,16 @@
 .domain .domain-contant .dom .text p {
    text-align: start;
    max-width: 400px;
+}
+@media (max-width:576px) {
+    .domain .domain-contant .dom i {
+        font-size: 60px;
+    } 
+    .domain .domain-contant .dom h3 {
+        font-size: 18px;
+    }
+    .domain .domain-contant .dom p {
+        font-size: 12px;
+    }
 }
 /* end domain  */
