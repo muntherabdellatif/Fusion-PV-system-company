@@ -314,9 +314,9 @@
 }
 .our-projects .down-space .img-space .carousel {
     position:absolute;
-    left: 100px;
-    top: -219px;
-    width: 100%;
+    left: 222px;
+    top: 7px;
+    width: 71%;
 }
 .our-projects .down-space img.logo {
     display: none;
@@ -343,6 +343,14 @@
 .our-projects .down-space p span {
     color: var(--main-color1);
 }
+@media (max-width:347px) {
+    .our-projects .down-space p {
+        display: none;
+    }
+    .our-projects .down-space img.logo2 { 
+        display: none;
+    }
+}
 @media (min-width:575px) {
     .our-projects .down-space {
         height: 55vh;
@@ -353,10 +361,12 @@
         height: 750px;
     }
     .our-projects .down-space img.logo2 {
+        display: block;
         width: 86px;
     }
     .our-projects .down-space p {
         font-size: 19px;
+        display: block;
     }
     .our-projects .down-space .img-space::after {
         border: solid 21px #1b2445d9;
@@ -377,6 +387,11 @@
         bottom: 130px;
         left: 141px;
         width: 116px;
+    }
+    .our-projects .down-space .img-space .carousel {
+        left: 112px;
+        top: -97px;
+        width: 86%;
     }
 }
 @media (min-width:767px) {
@@ -414,6 +429,11 @@
         left: 157px;
         width: 189px;
     }
+    .our-projects .down-space .img-space .carousel {
+        left: 127px;
+        top: -107px;
+        width: 99%;
+    }
 }
 @media (min-width:991px) {
     .our-projects .down-space {
@@ -450,6 +470,11 @@
         left: 145px;
         width: 240px;
     }
+    .our-projects .down-space .img-space .carousel {
+        left: 25px;
+        top: -106px;
+        width: 100%;
+    }
 }
 @media (min-width:1199px) {
     .our-projects .down-space .img-space {
@@ -480,6 +505,9 @@
         bottom: 196px;
         left: 243px;
         width: 256px;
+    }
+    .our-projects .down-space .img-space .carousel {
+        top: -219px;
     }
 }
 /* end our project section  */
