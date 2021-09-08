@@ -511,3 +511,132 @@
     }
 }
 /* end our project section  */
+/* start CEO  */
+.CEO {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.CEO p {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: var(--main-color2);
+    max-width: 500px;
+    font-size: 20px;
+}
+.CEO p span {
+    color: var(--main-color1);
+    font-size: 33px;
+}
+.CEO button {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+    1% , 5% {
+        transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        -moz-transform: translateX(20%);
+        -ms-transform: translateX(20%);
+        -o-transform: translateX(20%);
+}
+    3% , 7%{
+        transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        -moz-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+        -o-transform: translateX(-20%);
+}
+    4% , 8% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
+/* end CEO  */
+/* start call to action  */
+.call {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.call .contant {
+    width: 100%;
+    height: fit-content;
+    position: relative ;
+}
+.call .contant img {
+    width: 100%;
+}
+.call .contant .button-container {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+.call .contant p {
+    display: block;
+    text-align: center;
+    font-size: 34px;
+    color: white;
+    font-weight: bold;
+    animation-name: color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.call .contant button {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+@media (max-width:767px) {
+    .call .contant p {
+        font-size: 20px;  
+    }
+    .call .contant button {
+        margin-top: 20px;
+    }
+}
+@media (min-width:1199px) {
+    .call .contant p {
+         font-size: 50px; 
+    }
+    .call .contant button {
+        font-size: 35px;
+    }
+}
+
+@keyframes color {
+    0% {
+        color: transparent;
+        text-shadow: 0 0 0px white;
+    }
+    50% {
+        color: var(--main-color1);
+        text-shadow: 0 0 50px white;
+    }
+    100% {
+        color: transparent;
+        text-shadow: 0 0 0px white;
+    }
+}
+/* end call to action  */
+.contact-section {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-image: linear-gradient(176deg, white  , var(--main-color2) );
+    height: 50vh;
+    width: 100%;
+}
