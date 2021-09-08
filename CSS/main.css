@@ -265,16 +265,16 @@
 }
 .our-projects .down-space {
     width: 100%;
-    height: 100vh;
+    height: 27vh;
     overflow: hidden;  
     position: relative;  
 }
 .our-projects .down-space .img-space {
-    left: -254px;
+    left: -289px;
     top: -131px;
     position: relative;
-    width: 1220px;
-    height: 1220px;
+    width: 550px;
+    height: 550px;
     overflow: hidden;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -283,14 +283,14 @@
     -o-border-radius: 50%;
 }
 .our-projects .down-space .img-space::after {
-    left: 259px;
-    top: 258px;
+    border: solid 8px #1b2445d9;
+    left: 305px;
+    top: 211px;
+    width: 100px;
+    height: 100px;
     content: "";
     position: absolute;
-    width: 700px;
-    height: 700px;
     background-color: #1b244552;
-    border: solid 45px #1b2445d9;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -298,13 +298,13 @@
     -o-border-radius: 50%;
 }
 .our-projects .down-space .img-space::before {
-    left: 131px;
-    top: 126px;
+    left: 231px;
+    top: 138px;
+    width: 250px;
+    height: 250px;
     content: "";
     position: absolute;
-    width: 960px;
-    height: 957px;
-    border: solid 80px #1b244573;
+    border: solid 47px #1b244573;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -319,32 +319,67 @@
     width: 100%;
 }
 .our-projects .down-space img.logo {
+    display: none;
     position: absolute;
-    bottom: 196px;
-    left: 243px;
-    width: 256px;
+    bottom:20px;
+    left: 20px;
+    width: 66px;
 }
 .our-projects .down-space img.logo2 {
-    display: none;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     right: 0;
-    width: 207px;
+    width: 86px;
 }
 .our-projects .down-space p {
-    display: none;
     position: absolute;
     top: 0;
-    right: 17px;
+    right: 10px;
     color: white;
-    font-size: 43px;
+    font-size: 14px;
     font-weight: bold;
     text-align: end;
 }
 .our-projects .down-space p span {
     color: var(--main-color1);
 }
-@media (min-width:768px) {
+@media (min-width:575px) {
+    .our-projects .down-space {
+        height: 55vh;
+    }
+    .our-projects .down-space .img-space {
+        left: -289px;
+        width: 750px;
+        height: 750px;
+    }
+    .our-projects .down-space img.logo2 {
+        width: 86px;
+    }
+    .our-projects .down-space p {
+        font-size: 19px;
+    }
+    .our-projects .down-space .img-space::after {
+        border: solid 21px #1b2445d9;
+        left: 355px;
+        top: 251px;
+        width: 250px;
+        height: 250px;
+    }
+    .our-projects .down-space .img-space::before {
+        border: solid 47px #1b244573;
+        left: 279px;
+        top: 178px;
+        width: 400px;
+        height: 400px;
+    }
+    .our-projects .down-space img.logo {
+        display: block;
+        bottom: 130px;
+        left: 141px;
+        width: 116px;
+    }
+}
+@media (min-width:767px) {
     .our-projects .down-space {
         height: 76vh;
     }
@@ -354,11 +389,9 @@
         height: 900px;
     }
     .our-projects .down-space img.logo2 {
-        display: block;
         width: 152px;
     }
     .our-projects .down-space p {
-        display: block;
         font-size: 31px;
     }
     .our-projects .down-space .img-space::after {
@@ -376,12 +409,13 @@
         height: 600px;
     }
     .our-projects .down-space img.logo {
+        display: block;
         bottom: 210px;
         left: 157px;
         width: 189px;
     }
 }
-@media (min-width:992px) {
+@media (min-width:991px) {
     .our-projects .down-space {
         height: 100vh;
     }
@@ -411,12 +445,13 @@
         height: 850px;
     }
     .our-projects .down-space img.logo {
+        display: block;
         bottom: 266px;
         left: 145px;
         width: 240px;
     }
 }
-@media (min-width:1200px) {
+@media (min-width:1199px) {
     .our-projects .down-space .img-space {
         left: -254px;
         width: 1220px;
@@ -441,6 +476,7 @@
         height: 957px;
     }
     .our-projects .down-space img.logo {
+        display: block;
         bottom: 196px;
         left: 243px;
         width: 256px;
