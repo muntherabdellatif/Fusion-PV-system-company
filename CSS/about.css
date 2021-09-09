@@ -11,13 +11,156 @@
 }
 /* end nav  */
 /* start landing */
+.landing {
+    position: relative;
+    background-image: url(../img/about-background.jpg);
+    background-size: cover;
+    background-attachment:fixed ;
+    height: 100vh;
+    overflow: hidden;
+}
 .video-container {
     position: relative;
     top: -120px;
-    height: 100vh;
 }
 video {
     z-index: -1;
     width: 100%;
 }
+@media (max-width:991px) {
+    video {
+      display: none;
+    }
+}
+@media (min-width:991px) {
+    .landing {
+        background: none;
+    }
+}
+.landing .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.landing p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+@media (max-width:576px) {
+    .landing p {
+        font-size: 19px;
+    }
+}
+.landing .content button {
+    display: block;
+    margin: auto;
+}
+.landing .content button a{
+    color: white;
+    text-decoration: none;
+}
 /* end landing */
+/* start description */
+.description {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+@media (max-width:991px) {
+    .description .container .row div img {
+        margin-left: -23px;
+    }
+}
+.description p {
+    margin-bottom: 26px;
+    line-height: 1.7;
+}
+.description p:last-of-type {
+    color: var(--main-color1);
+    font-size: 33px;
+    font-weight: bold;
+}
+.description img {
+    width: 271px;
+    display: block;
+    margin: auto;
+}
+/* end description */
+/* start mission */
+    .mission {
+        padding-top: var(--main-padding);
+        padding-bottom: var(--main-padding);
+        background-color: var(--main-color2);
+    }
+    .mission .main-heading h2 {
+        color: var(--main-color1);
+    }
+    .mission .main-heading p {
+        color: var(--color5) !important;
+    }
+    .mission .main-heading  p::before {
+        background-color: var(--color5);
+    }
+    .mission .main-heading  p::after {
+        background-color: var(--main-color1);
+        border-color: var(--color5) ;
+    }
+    .mission .contant {
+        margin: 40px auto;
+        max-width: 400px;
+        perspective: 800px;
+    }
+    .mission .box {
+        position: relative;
+        max-width: 100%;
+        height: 400px;
+        transform-origin: right center;
+        transform-style: preserve-3d;
+        transition:  transform 2s;
+        -webkit-transition:  transform 2s;
+        -moz-transition:  transform 2s;
+        -ms-transition:  transform 2s;
+        -o-transition:  transform 2s;
+    }
+    .mission .box .face {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+}
+    .mission .box .front {
+        background-color: var(--main-color1);
+        font-size: xx-large;
+    }
+    .mission .box .back {
+        color: var(--main-color2);
+        padding: 20px;
+        font-size: 21px;
+        background-color: var(--color3);
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+    .mission .box:hover {
+        transform: rotateY(-180deg) translateX(100%);
+        -webkit-transform: rotateY(-180deg) translateX(100%);
+        -moz-transform: rotateY(-180deg) translateX(100%);
+        -ms-transform: rotateY(-180deg) translateX(100%);
+        -o-transform: rotateY(-180deg) translateX(100%);
+    }
+    .mission h2 {
+        margin-left: 20px;
+    }
+/* end mission */

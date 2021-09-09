@@ -44,6 +44,10 @@
     text-transform: uppercase;
     padding: 10px;
 }
+.landing .contant button a {
+    text-decoration: none;
+    color: white;
+}
 @media (max-width:992px){ 
     .landing .contant .name {
         font-size: 20px;
@@ -132,7 +136,7 @@
     color: var(--main-color1);
 }
 .our-projects .main-heading p {
-    color: var(--color5);
+    color: var(--color5) !important;
 }
 .our-projects .main-heading  p::before {
     background-color: var(--color5);
@@ -480,6 +484,10 @@
     display: block;
     margin: auto;
     margin-top: 6px;
+}
+.call .contant button a {
+    color: white;
+    text-decoration: none;
 }
 .call .contant button::after {
     position: absolute;
