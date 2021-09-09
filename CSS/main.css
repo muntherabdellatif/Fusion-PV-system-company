@@ -588,7 +588,7 @@
 .call .contant p {
     display: block;
     text-align: center;
-    font-size: 34px;
+    font-size: 19px;
     color: white;
     font-weight: bold;
     animation-name: color;
@@ -597,16 +597,60 @@
     animation-fill-mode: both;
 }
 .call .contant button {
+    font-size: 14px;
+    position: relative;
     display: block;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 6px;
 }
-@media (max-width:767px) {
+.call .contant button::after {
+    position: absolute;
+    right: -16px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0a5";
+    font-weight: 800;
+    animation-name: move-right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.call .contant button::before {
+    left: -16px;
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0a4";
+    font-weight: 800;
+    animation-name: move-left;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@media (min-width:575px) {
+    .call .contant p {
+        font-size: 31px;  
+    }
+    .call .contant button {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .call .contant button::after {
+        right: -37px;
+    }
+    .call .contant button::before {
+        left: -37px;
+    }
+}
+@media (min-width:991px) {
     .call .contant p {
         font-size: 20px;  
     }
     .call .contant button {
+        font-size: 35px;
         margin-top: 20px;
+    }
+    .call .contant button::after {
+        font-size: 35px;
+    }
+    .call .contant button::before {
+        font-size: 35px;
     }
 }
 @media (min-width:1199px) {
@@ -632,7 +676,54 @@
         text-shadow: 0 0 0px white;
     }
 }
+@keyframes move-right {
+    0% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
+@keyframes move-left {
+    0% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+    100% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
 /* end call to action  */
+/* start contact  */
 .contact-section {
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
@@ -640,3 +731,4 @@
     height: 50vh;
     width: 100%;
 }
+/* end contact  */
