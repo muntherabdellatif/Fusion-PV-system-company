@@ -1,0 +1,23 @@
+/* start nav */
+.nav-container {
+    position: relative;
+    z-index: 2;
+}
+@media (max-width:991px) {
+    .navbar-nav {
+        position: relative;
+        z-index: 2;
+    }
+}
+/* end nav  */
+/* start landing */
+.video-container {
+    position: relative;
+    top: -120px;
+    height: 100vh;
+}
+video {
+    z-index: -1;
+    width: 100%;
+}
+/* end landing */
