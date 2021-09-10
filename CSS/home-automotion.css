@@ -1,3 +1,8 @@
 .landing {
     background-image: url(../img/a.jpg) !important;
 }
+@media (max-width:767px) {
+    .landing {
+        background-image: url(../img/home-automation-background-intelligent-house-concept-F4Y3EC.jpg) !important;
+    }
+}

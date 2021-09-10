@@ -19,6 +19,11 @@
     height: 100vh;
     overflow: hidden;
 }
+@media (max-width:767px) {
+    .landing {
+        background-image: url(../img/about-sm.PNG) !important;
+    }
+}
 .video-container {
     position: relative;
     top: -120px;
