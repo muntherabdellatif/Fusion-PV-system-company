@@ -94,6 +94,10 @@
 .domain .domain-contant .dom h3 {
     color: var(--main-color2);
 }
+.domain .domain-contant .dom a {
+    display: block;
+    text-decoration: none;
+}
 .domain .domain-contant .dom i {
     text-align: center;
     font-size: 150px;

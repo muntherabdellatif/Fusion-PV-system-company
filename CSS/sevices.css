@@ -1,6 +1,6 @@
 /* start landing */
 .landing {
-    background-image: url(../img/renewable-background.jpg);
+    /* background-image: url(../img/renewable-background.jpg); */
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -34,7 +34,7 @@
 }
 /* end landing  */
 /* start about renewable  */
-.about-renewable {
+.about-services {
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
     position: relative;
@@ -109,25 +109,26 @@
         left: 173px;
     }
 }
-.about-renewable .content p {
+.about-services .content p {
     color: var(--main-color2);
     font-size: 38px;
     font-weight: bold;
     text-align: center;
 } 
-.about-renewable .content button {
+.about-services .content button {
     display: block;
     margin: 0 auto 50px;
 }
-.about-renewable .content button a {
+.about-services .content button a {
     color: white;
     text-decoration: none;
 } 
-.about-renewable .about-renewable-text h2 {
+.about-services .about-services-text h2 {
     color: var(--main-color2);
     margin-bottom: 25px;
+    font-size: 40px;
 }
-.about-renewable .about-renewable-text p {
-
+.about-services .about-services-text p {
+    font-size: 25px;
 }
 /* end about renewable  */
