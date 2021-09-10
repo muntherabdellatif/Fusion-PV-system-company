@@ -1,0 +1,133 @@
+/* start landing */
+.landing {
+    background-image: url(../img/renewable-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.landing::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color:  #2125298a;;
+}
+.landing .contant {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    color: white;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.landing .contant h1 { 
+    font-size: 40px;
+    font-weight: bold;
+}
+.landing .contant button a {
+    color: white;
+    text-decoration: none;
+}
+/* end landing  */
+/* start about renewable  */
+.about-renewable {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    position: relative;
+    overflow: hidden;
+}
+.color-space1 {
+    position: absolute;
+    top: 86px;
+    left: 45px;
+    width: 600px;
+    height: 400px;
+    background-color: #36c2f370;
+    z-index: -1;
+    border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%   ;
+    -webkit-border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%   ;
+    -moz-border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%   ;
+    -ms-border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%   ;
+    -o-border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%   ;
+}
+.color-space2 {
+    position: absolute;
+    top: 190px;
+    left: 451px;
+    width: 600px;
+    height: 400px;
+    background-color: #63c040a3;
+    z-index: -1;
+    border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%;
+    -webkit-border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%;
+    -moz-border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%;
+    -ms-border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%;
+    -o-border-radius: 100% 69% 90% 63% / 72% 92% 77% 98%;
+}
+@media (max-width:991px) {
+    .color-space1 , 
+    .color-space2 {
+        width: 500px;
+        height: 300px;
+    }
+    .color-space1 {
+        top: 145px;
+    }
+    .color-space2 {
+        top: 265px;
+    }
+}
+@media (max-width:767px) {
+    .color-space1 , 
+    .color-space2 {
+        width: 400px;
+        height: 200px;
+    }
+    .color-space1 {
+        top: 389px;
+    }
+    .color-space2 {
+        top: 475px;
+        left: 267px;
+    }
+}
+@media (max-width:576px) {
+    .color-space1 , 
+    .color-space2 {
+        width: 300px;
+        height: 176px;
+    }
+    .color-space1 {
+        top: 389px;
+    }
+    .color-space2 {
+        top: 475px;
+        left: 173px;
+    }
+}
+.about-renewable .content p {
+    color: var(--main-color2);
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+} 
+.about-renewable .content button {
+    display: block;
+    margin: 0 auto 50px;
+}
+.about-renewable .content button a {
+    color: white;
+    text-decoration: none;
+} 
+.about-renewable .about-renewable-text h2 {
+    color: var(--main-color2);
+    margin-bottom: 25px;
+}
+.about-renewable .about-renewable-text p {
+
+}
+/* end about renewable  */

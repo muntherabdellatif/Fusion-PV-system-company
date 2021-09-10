@@ -15,6 +15,11 @@
     /* padding  */
     --main-padding:100px;
 }
+p::selection , 
+h1::selection ,h2::selection ,h3::selection{
+    color: white;
+    background-color: var(--main-color1);
+}
 .btn-primary {
     color: #fff;
     background-color: var(--main-color1);
@@ -121,6 +126,11 @@
 }
 .navbar .dropdown-menu a {
     color: white;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(245, 222, 179, 0.664);
 }
 .navbar button a {
     color: white;
